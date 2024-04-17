@@ -6,7 +6,7 @@ I have been doing some research into hacking into an old makerbot replicator min
 I don't know if this repo will go anywhere with this but I wanted to get it documented on the internet where I would be looking so if someone else out there is also looking they can find this.
 
 Specifcally 
-Makerbot Replicator 5th gen
-Makerbot Replicator +
-Makerbot Replicator 5th gen mini
-Makerbot Replicator mini+
+Makerbot Replicator 5th gen  
+Makerbot Replicator +  
+Makerbot Replicator 5th gen mini  
+Makerbot Replicator mini+  
