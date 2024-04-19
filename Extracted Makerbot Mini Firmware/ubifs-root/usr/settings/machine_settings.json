@@ -1,0 +1,348 @@
+{
+    "home": {
+        "timeseries_home_distance": 3.5,
+        "timeseries_retries": 5,
+        "restart_distance_mm": 29.0,
+        "nozzle_clearance": 5,
+        "seat_distance_mm": 7.0,
+        "z_reference_point": {
+            "y": 63.0,
+            "x": 0.0,
+            "offset": 0.0
+        },
+        "polarity": {
+            "y": false,
+            "x": false,
+            "z": true
+        },
+        "position_mm": {
+            "y": -66.0,
+            "x": -61.0,
+            "z": 0.0
+        },
+        "temperature": 180,
+        "extra_z_offset": -0.4,
+        "build_plate_check": false,
+        "timeseries_max_seated_value": 7000,
+        "z_calibration_hot": "yes",
+        "step_size": 0.025,
+        "cool_temp_c": 60,
+        "alternate_z_reference_point": {
+            "y": 63.0,
+            "x": 0.0,
+            "offset": 0.0
+        },
+        "timeseries_threshold": 0.05,
+        "type": {
+            "y": "load_sense",
+            "x": "load_sense",
+            "z": "switch"
+        },
+        "seat_speed_mm_per_s": 40,
+        "direction": {
+            "y": -1,
+            "x": -1,
+            "z": -1
+        },
+        "available_z_offset_adjustment": 0.8,
+        "retract_distance_mm": 27.0,
+        "safe_z_home_position": {
+            "y": -66.0,
+            "x": -61.0
+        },
+        "per_extruder": {},
+        "rate_mm_per_s_fine": {
+            "z": 2
+        },
+        "timeseries_window": 15,
+        "distance_mm": {
+            "y": 140,
+            "x": 120,
+            "z": 170
+        },
+        "rate_mm_per_s": {
+            "y": 22,
+            "x": 22,
+            "z": 12
+        },
+        "move_away_mm": {
+            "y": 5.0,
+            "x": 5.0,
+            "z": 1.5
+        },
+        "z_calibration_type": "endstop",
+        "timeseries_sample_rate": 30.0,
+        "method": "timeseries",
+        "timeseries_home_speed": 0.5,
+        "timeseries_start_position_z": 3.5,
+        "pin_progress_during_z_home": false,
+        "mag_sense": {
+            "threshold": 1000,
+            "sample_size": 64,
+            "deviation": 5000,
+            "exponent": 0
+        },
+        "retract_speed_mm_per_s": 5,
+        "timeseries_min_range": 7000
+    },
+    "lights": {
+        "chamber_ack": {
+            "priority": 1,
+            "knob": {
+                "r": 1.0,
+                "b": 0.0,
+                "period": 0.0,
+                "g": 0.7
+            },
+            "chamber": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 1.0,
+                "g": 1.0
+            }
+        },
+        "acknowledge": {
+            "priority": 1,
+            "knob": {
+                "r": 1.0,
+                "b": 0.0,
+                "period": 0.5,
+                "g": 0.7
+            },
+            "chamber": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 0.0,
+                "g": 1.0
+            }
+        },
+        "chamber_type": "standard",
+        "cycle_colors_on_start": true,
+        "priority_busy": {
+            "priority": 1.5,
+            "knob": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 1.0,
+                "g": 1.0
+            },
+            "chamber": {
+                "r": 0.0,
+                "b": 0.0,
+                "period": 0.0,
+                "g": 0.0
+            }
+        },
+        "ready": {
+            "priority": 2,
+            "knob": {
+                "r": 1.0,
+                "b": 0.0,
+                "period": 0.0,
+                "g": 0.7
+            },
+            "chamber": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 0.0,
+                "g": 1.0
+            }
+        },
+        "idle": {
+            "priority": 2,
+            "knob": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 0.0,
+                "g": 1.0
+            },
+            "chamber": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 0.0,
+                "g": 1.0
+            }
+        },
+        "busy": {
+            "priority": 2,
+            "knob": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 1.0,
+                "g": 1.0
+            },
+            "chamber": {
+                "r": 0.0,
+                "b": 0.0,
+                "period": 0.0,
+                "g": 0.0
+            }
+        },
+        "error": {
+            "priority": 0,
+            "knob": {
+                "r": 1.0,
+                "b": 0.0,
+                "period": 0.5,
+                "g": 0.0
+            },
+            "chamber": {
+                "r": 1.0,
+                "b": 1.0,
+                "period": 0.0,
+                "g": 1.0
+            }
+        },
+        "print": {
+            "priority": 2,
+            "knob": {
+                "r": 1.0,
+                "b": 0.0,
+                "period": 0.0,
+                "g": 0.0
+            },
+            "chamber": {
+                "r": 1.0,
+                "b": 0.0,
+                "period": 0.0,
+                "g": 0.0
+            }
+        },
+        "invert_led_colors": true,
+        "tether": {
+            "priority": 1,
+            "knob": {
+                "r": 0.0,
+                "b": 1.0,
+                "period": 0.5,
+                "g": 0.0
+            },
+            "chamber": {
+                "r": 0.0,
+                "b": 0.0,
+                "period": 0.0,
+                "g": 0.0
+            }
+        }
+    },
+    "leveling": {
+        "can_switch_sides": true,
+        "lock": false,
+        "use_toolhead_led": true,
+        "slope_sample_distance": 0.2,
+        "positions": {
+            "front": {
+                "y": 14.48,
+                "x": 126.65
+            },
+            "fixed": {
+                "y": 53,
+                "x": 0.0
+            },
+            "side": {
+                "y": 101.22,
+                "x": 53.65
+            },
+            "calibrate_z": false
+        },
+        "threshold": 1,
+        "method": "two-pass"
+    },
+    "interface_address": 6,
+    "has_heated_chamber": false,
+    "single_button_interface": true,
+    "filament": {
+        "subtract_suspend_retract": true,
+        "unload_delay": 20,
+        "load_speed": 6,
+        "load_distance": 100,
+        "unload_speed_one": 95,
+        "unload_distance_two": 25,
+        "unload_speed_two": 10,
+        "unload_distance_one": 35
+    },
+    "gantry_configuration": {
+        "max_fill_speed": 90,
+        "max_outer_shell_speed": 20,
+        "max_inner_shell_speed": 90,
+        "travel_speed_z": 23,
+        "travel_speed_xy": 150
+    },
+    "steps_per_mm": {
+        "y": 88.573186,
+        "x": 88.573186,
+        "z": 1066.66666666667
+    },
+    "axis_length": {
+        "y": 140,
+        "x": 126,
+        "z": 125
+    },
+    "max_speed_mm_per_second": {
+        "y": 120,
+        "x": 120,
+        "z": 8
+    },
+    "park_prep": {
+        "y": -66.0,
+        "x": -61.0
+    },
+    "park": {
+        "y": -66.0,
+        "x": -61.0,
+        "z": 125
+    },
+    "suspend": {
+        "restart_distance": 27,
+        "retract_distance": 27
+    },
+    "purge_start_position": {
+        "y": -66,
+        "x": -59,
+        "z": 0.2,
+        "a": 0
+    },
+    "start_position": {
+        "y": 37,
+        "x": -59,
+        "z": 0.2,
+        "a": 30
+    },
+    "build_volume": {
+        "y": 126,
+        "x": 101,
+        "z": 126
+    },
+    "toolhead_syncing": true,
+    "active_tool": 0,
+    "tool_update_interval_s": 0.5,
+    "acceleration": {
+        "split_move_recursion_count": 36,
+        "split_move_distance_mm": 2.5,
+        "min_speed_change_mm_per_s": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "impulse_speed_limit_mm_per_s": {
+            "y": 90,
+            "x": 90,
+            "z": 0
+        },
+        "max_speed_change_mm_per_s": {
+            "y": 18,
+            "x": 18,
+            "z": 0
+        },
+        "rate_mm_per_s_sq": {
+            "y": 500,
+            "x": 500,
+            "z": 150
+        }
+    },
+    "extra_slicer_settings": {
+        "plate_variability": 0.5
+    },
+    "do_not_reset_lcd_settings": true,
+    "bot_type": "mini_8"
+}

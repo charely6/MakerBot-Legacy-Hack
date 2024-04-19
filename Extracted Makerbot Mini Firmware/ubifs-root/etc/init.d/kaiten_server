@@ -1,0 +1,30 @@
+#!/bin/sh
+
+CMD=/usr/bin/python
+PID=/tmp/kaiten.pid
+
+case "$1" in 
+    start)
+        echo "Starting Kaiten"
+        ulimit -c unlimited
+        # TODO: Fix buildroot to link python properly on 14.04
+        export LD_PRELOAD=librt.so.1
+        # to make __hash__ consistent between runs
+        export PYTHONHASHSEED=0
+        start-stop-daemon -S -m -b -p $PID -x $CMD -- -m kaiten.main
+        ;;
+    stop)
+        echo "Stopping Kaiten"
+        start-stop-daemon -K -p $PID -x $CMD
+        ;;
+    restart)
+        $0 stop
+        sleep 1
+        $0 start
+        ;;
+    *)  
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit 0

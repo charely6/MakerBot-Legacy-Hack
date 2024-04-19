@@ -1,0 +1,113 @@
+{
+    "machine_log_level": "info",
+    "machine_use_console_log": false,
+    "toolhead_sync_delay": 12,
+    "acceleration": {
+        "split_move_recursion_count": 36,
+        "split_move_distance_mm": 2.5,
+        "min_speed_change_mm_per_s": {
+            "y": 0,
+            "x": 0,
+            "z": 0
+        },
+        "max_sequential_iterates": 200,
+        "impulse_speed_limit_mm_per_s": {
+            "y": 90,
+            "x": 90,
+            "z": 0
+        },
+        "max_speed_change_mm_per_s": {
+            "y": 25,
+            "x": 25,
+            "z": 0
+        },
+        "buffer_size": 200,
+        "allow_suspend_decel": true,
+        "rate_mm_per_s_sq": {
+            "y": 650,
+            "x": 650,
+            "z": 150
+        }
+    },
+    "direction_multiplier": {
+        "y": 1,
+        "x": 1
+    },
+    "print_log_filename": "/home/logs/printer/print_telemetry.log",
+    "sync_stall_error_threshold_ticks": 64285714,
+    "buffer_stall_error_threshold_ticks": 64285714,
+    "steps_per_mm": {
+        "y": 88.573186,
+        "x": 88.573186,
+        "z": 1066.66666666667
+    },
+    "axis_length": {
+        "y": 140,
+        "x": 126,
+        "z": 126
+    },
+    "max_speed_mm_per_second": {
+        "y": 120,
+        "x": 120,
+        "z": 8
+    },
+    "toolheads": {
+        "bronx": {
+            "program": "/usr/firmware/Bronx.hex",
+            "axes": [
+                "a"
+            ],
+            "type": [
+                "extruder",
+                "hes"
+            ],
+            "locations": [
+                0
+            ],
+            "heater": {
+                "temperature_freeze_timeout_ms": 120000
+            }
+        }
+    },
+    "active_tool": 0,
+    "home": {
+        "polarity": {
+            "y": false,
+            "x": false,
+            "z": true
+        },
+        "direction": {
+            "y": -1,
+            "x": -1,
+            "z": -1
+        },
+        "rate_mm_per_s": {
+            "y": 22,
+            "x": 22,
+            "z": 12
+        },
+        "distance_mm": {
+            "y": 140,
+            "x": 140,
+            "z": 170
+        },
+        "rate_mm_per_s_fine": {
+            "z": 2
+        },
+        "type": {
+            "y": "load_sense",
+            "x": "load_sense",
+            "z": "switch"
+        },
+        "position_mm": {
+            "y": -66.0,
+            "x": -61.0,
+            "z": 0.0
+        },
+        "move_away_mm": {
+            "y": 5.0,
+            "x": 5.0,
+            "z": 1.5
+        }
+    }
+}

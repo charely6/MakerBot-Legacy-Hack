@@ -1,0 +1,32 @@
+#!/bin/sh
+
+APACHECTL="/usr/local/apache2/bin/apachectl -f /etc/httpd.conf -k"
+
+case "$1" in 
+    start)
+        mkdir -p /var/ssl
+        if [ -e /var/ssl/server.crt ]
+        then ln -fs /usr/local/apache2/conf/extra/httpd-ssl.conf /var/ssl/httpd-ssl.conf
+        else ln -fs /usr/local/apache2/conf/extra/httpd-ssl-null.conf /var/ssl/httpd-ssl.conf
+        fi
+        echo "Starting the Apache server"
+        nice -n 1 ${APACHECTL} start
+        ;;
+    stop)
+        echo "Stopping the Apache server"
+        # Apache can't seem to write a proper pid file, so lets hack one together
+        PSLINE=$(ps | grep 'root[^/]*/usr/local/apache2/bin/httpd')
+        echo ${PSLINE%% root*} >/var/run/httpd.pid
+        # Even if this doesn't work, the file was already borked...
+        ${APACHECTL} stop
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    *)  
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit 0

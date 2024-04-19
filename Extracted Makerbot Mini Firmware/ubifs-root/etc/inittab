@@ -1,0 +1,42 @@
+# /etc/inittab
+#
+# Copyright (C) 2001 Erik Andersen <andersen@codepoet.org>
+#
+# Note: BusyBox init doesn't support runlevels.  The runlevels field is
+# completely ignored by BusyBox init. If you want runlevels, use
+# sysvinit.
+#
+# Format for each entry: <id>:<runlevels>:<action>:<process>
+#
+# id        == tty to run on, or empty for /dev/console
+# runlevels == ignored
+# action    == one of sysinit, respawn, askfirst, wait, and once
+# process   == program to run
+
+# Startup the system
+null::sysinit:/bin/mount -t proc proc /proc
+#null::sysinit:/bin/mount -o remount,rw / # REMOUNT_ROOTFS_RW
+null::sysinit:/bin/mkdir -p /dev/pts
+null::sysinit:/bin/mkdir -p /dev/shm
+null::sysinit:/bin/mount -a
+null::sysinit:/bin/hostname -F /etc/hostname
+# now run any rc scripts
+::sysinit:/etc/init.d/rcS
+
+# Put a getty on the serial port
+ttyS1::respawn:/sbin/getty -L ttyS1 115200 vt100 # GENERIC_SERIAL
+
+# Stuff to do for the 3-finger salute
+::ctrlaltdel:/sbin/reboot
+
+# Stuff to do before rebooting
+null::shutdown:/bin/echo 4 >/sys/class/graphics/fb0/blank
+null::shutdown:/etc/init.d/rcK
+null::shutdown:/bin/umount -a -r
+null::shutdown:/sbin/swapoff -a
+
+# This is called whenever we try to rebot or power off, but only actually
+# works if we have configured /dev/ttyS2 first.  This allows us to use the
+# proper init shutdown method for both reboot and power off, although sadly
+# the differentiation lies outside of what command we called.
+null::shutdown:/bin/echo -en '\x12\xb2' >/dev/ttyS2

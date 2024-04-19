@@ -1,0 +1,26 @@
+CMD=/usr/apps/queenie/queenie
+PID=/tmp/queenie.pid
+
+case "$1" in 
+    start)
+        echo "Starting Queenie"
+        ulimit -c unlimited
+        export QT_QWS_FONTDIR=/usr/lib/fonts
+        export QWS_KEYBOARD="RotaryDial:/dev/input/event0 TTY"
+        start-stop-daemon -S -m -b -p $PID -x $CMD -- -qws -nomouse
+        ;;
+    stop)
+        echo "Stopping Queenie"
+        start-stop-daemon -K -p $PID -x $CMD
+        ;;
+    restart)
+        $0 stop
+        sleep 1
+        $0 start
+        ;;
+    *)  
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit 0

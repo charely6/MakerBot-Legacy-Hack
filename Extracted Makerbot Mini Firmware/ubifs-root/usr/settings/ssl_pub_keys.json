@@ -1,0 +1,22 @@
+{
+    "makerbot.com": [
+        {
+            "algo": "rsa",
+            "key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm8oWCRt0flJaNoJZP9c7\nnKI6K1QpoQybu61RAthBsLus+Ik5rcevHjggDJlSPgm1R924lk/p0iMx9oNXJCpn\nA4msrlIOgL+GZh7ZHRrL/qSeSSkNdDN57TVPkQv9y0dE4uDJNFCLf6NZ1B85thSM\nWYDHqxIEPApDPsyL0RNL8Xjk7B4JKVp4TOwEov+XgP92NcAGmfGPlOnPzynWCdxB\nuwWHBEfmuU06E53XxPhnf1rO7nO/9vVNs+k0cJGqQLqhdXfll2SL8P9M23X/Alae\nWoayFnkupbxbjr0yx5H5RLNEjZy1xAIb8Z73wRnBttqKlwBd9xo2t6ish7+SquVJ\n2wIDAQAB\n-----END PUBLIC KEY-----"
+        },
+        {
+            "algo": "rsa",
+            "key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyivpGkAlW1e9AG6cOQtT\nfT8UJ6Qby+dn1Gkco5TkTXXe5DnpYwDIXgT5hz/u0y0kveqBQCDAudch7UcduwO+\nQPLs//9Pjx4oQoG4nAiAhQdXc9LGxUJbyNRaNE3Iux5Uw2nmxdPUZKSHmq7sPvDU\n8dolDMz5x1OqqKoTUCR9NsQfJaLbAufMCoUmgA99O0xw8pkepulIDGlvjLGXt+LL\npM8hRr0nK5g0EMRe6F4oVMHfgubS1A0UEnE7WLmFhDFuyrEOwxmIOX9X5DK9lKya\nRCuRqz5AamBVJQzIunRPnFiriqmnDZDa5G4Ivb2yh1ayJLyVI7I0EB+faAlUYf+o\nKwIDAQAB\n-----END PUBLIC KEY-----"
+        }
+    ],
+    "thingiverse.com": [
+        {
+            "algo": "rsa",
+            "key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA+NDlxN3C3eZmmBoW1xAR\nLfwXEfeBB1z9CGWEt8Dq4VSO7HfqL/zQz1WFpp3DDWXcD0DybHJrA6X0MMcvp4s2\nMjrUwhC4vqG/Q2H+xI8oulxY+BsWX71S24oFYltCszGhHzZeEYaBGALBfG77aSSE\nfF0oRtb0f6vG8+IPJGDrBSwcKA/dCusBooINXR585U1CvoFgaYrDWyhikiHmLcNZ\ny9OxPr36czVQ35C9bNnqW6DQMIyHv4896GrR0Xzz8xx+RNNSTlL0ANUQIrOUDqSJ\n/0tjBE2A0ix5hsxcxJYoxcnBdFy8/tCXQTDAoiriaWydZon306r4fiHN1nx0L0Lk\ncwIDAQAB\n-----END PUBLIC KEY-----"
+        },
+        {
+            "algo": "rsa",
+            "key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxNkdNlw357XUOkFE3Z7E\nqG4W/pFbBJ1D7QDCKsPEWBRN/c9QaBbeXXim0NNOI822MtgMcfcVr9rFFZQsi4Hp\nflMsqwRc3qQv32CWJhkU7Lpak3Bj/Sq55ROs6YfngLrKuCH89aYsUauN6RJ+2Zu1\nq3twpRkRypS1Xw65q4ilLBPhTFMgtVCFN6avWkTCq4HeHL6Q64JFSbceBXUTTO/F\nxG+Fy+uVFdwEH82lciE1A5uyojUg5OSJr1ZmANp7IsvK9XBx6ievCUDS1nLvQ296\ng7YwSetC9NcEv5YYeIweKpuYCramIrjyfm64aHCX5t+je6N3L3+YHjZ5BtQ4xRVY\nrQIDAQAB\n-----END PUBLIC KEY-----"
+        }
+    ]
+}

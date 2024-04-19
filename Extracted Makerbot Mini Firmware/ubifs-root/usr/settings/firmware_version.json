@@ -1,0 +1,10 @@
+{
+    "firmware_version": {
+        "major": 2,
+        "minor": 6,
+        "bugfix": 3,
+        "build": 736
+    },
+    "commit": "2565ad885",
+    "builder": "Release_Birdwing"
+}

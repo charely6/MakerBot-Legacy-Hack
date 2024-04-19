@@ -1,0 +1,8 @@
+{
+    "kaiten" : {
+        "mixpanel" : {
+            "mixpanel_url": "watchtower.makerbot.com",
+            "mixpanel_token": "9d6ef582c80635f8072ce9d3bb68a6cf"
+        }
+    }
+}

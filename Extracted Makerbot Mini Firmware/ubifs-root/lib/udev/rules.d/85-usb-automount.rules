@@ -1,0 +1,12 @@
+ACTION!="add|remove", GOTO="automount_end"
+SUBSYSTEM!="block", GOTO="automount_end"
+
+ENV{ID_TYPE}!="disk", GOTO="automount_end"
+ENV{DEVTYPE}!="partition", GOTO="automount_end"
+
+KERNEL!="sd*", GOTO="automount_end"
+
+ACTION=="add", RUN+="/bin/sh -c 'if ! /bin/grep -qs home/usb_storage /proc/mounts; then /bin/mount /home/usb_storage; fi'"
+ACTION=="remove", RUN+="/bin/umount -l /home/usb_storage"
+
+LABEL="automount_end"

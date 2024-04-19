@@ -1,0 +1,261 @@
+{"extruder_profiles" : {
+    "mk12" : {
+        "nozzle_diameter" : 0.4,
+        "material_default" : "pla",
+        "materials" : {
+            "pla" : {
+                "linear_density": 0.0031,
+                "ooze_feedstock_distance" : 0.1,
+                "retract_distance" : 1.0,
+                "retract_rate" : 50,
+                "restart_rate" : 30,
+                "feed_diameter" : 1.77,
+                "temperature" : 215,
+                "max_flow_rate" : 5.0,
+                "acceleration" : {
+                    "slip_compensation_table" : [
+                        [0,0],
+                        [1.6255, 1.6255],
+                        [1.7881, 1.9222],
+                        [1.9506, 2.1457],
+                        [2.2, 2.3],
+                        [2.4383, 2.7],
+                        [2.9259, 3.4],
+                        [3.5761, 4.2],
+                        [3.9, 4.524],
+                        [4.2263, 5.15],
+                        [4.8765, 6],
+                        [100, 100]
+                    ],
+                    "impulse_speed_limit_mm_per_s" : {
+                        "a" : 3
+                    },
+                    "min_speed_change_mm_per_s" : {
+                        "a" : 0.01
+                    },
+                    "max_speed_change_mm_per_s" : {
+                        "a" : 0.5
+                    },
+                    "rate_mm_per_s_sq" : {
+                        "a" : 10
+                    },
+                    "extruder_responsiveness_rshift" : 8,
+                    "extruder_relax_shift_offset" : 3, 
+                    "extruder_relax_decay_time" : 300, 
+                    "motor_damping_rshift" : 4, 
+                    "velocity_error_lshift" : 6
+                },
+                "toolheads" : {"bronx" : {
+                    "heater" : {
+                        "at_temp_timeout_min" : 3,
+                        "rise_timeout_min" : 1,
+                        "rise_temperature_threshold" : 10,
+                        "sag_temperature_threshold" : 20,
+                        "overrun_temperature_threshold" : 20,
+                        "preheat_temperature" : 180,
+                        "fan_preload" : 15,
+                        "print_temperature_default" : 215,
+                        "wait_for_target_timeout" : 5,
+                        "preload_tick_delay" : 8900
+                    }
+                }}
+            }
+        },
+        "home" : {
+            "retract_distance_mm" : 25.0,
+            "restart_distance_mm" : 25.0
+        },
+        "steps_per_mm" : {
+            "a" : 108.55
+        },
+        "max_speed_mm_per_second" : {
+            "a": 5.3
+        },
+        "filament" : {
+            "load_speed" : 4,
+            "load_distance" : 100,
+            "unload_speed_one" : 95,
+            "unload_speed_two" : 10,
+            "unload_distance_one" : 40,
+            "unload_distance_two" : 20,
+            "unload_delay": 10,
+            "auto_unload_distance": 80
+        }
+    },
+    "mk13" : {
+        "nozzle_diameter" : 0.4,
+        "material_default" : "pla",
+        "materials" : {
+            "pla" : {
+                "linear_density": 0.0031,
+                "ooze_feedstock_distance" : 0.1,
+                "retract_distance" : 0.5,
+                "retract_rate" : 50,
+                "restart_rate" : 30,
+                "feed_diameter" : 1.77,
+                "temperature" : 215,
+                "max_flow_rate" : 5.0,
+                "acceleration" : {
+                    "slip_compensation_table" : [
+                        [0,0],
+                        [0.4877, 0.5215],
+                        [0.7315, 0.7816],
+                        [0.9754, 1.0420],
+                        [1.4631, 1.5563],
+                        [1.9508, 2.0581],
+                        [2.4385, 2.5665],
+                        [2.9261, 3.0359],
+                        [3.4138, 3.3925],
+                        [3.9015, 3.7065],
+                        [4.3892, 3.9777],
+                        [4.8770, 4.2673],
+                        [5.3646, 4.8449],
+                        [6.8277, 6.8277],
+                        [7.8031, 8.5834],
+                        [8.7784, 10.0952],
+                        [100, 100]
+                    ],
+                    "impulse_speed_limit_mm_per_s" : {
+                        "a" : 3.0
+                    },
+                    "min_speed_change_mm_per_s" : {
+                        "a" : 0.01
+                    },
+                    "max_speed_change_mm_per_s" : {
+                        "a" : 0.5
+                    },
+                    "rate_mm_per_s_sq" : {
+                        "a" : 10.0
+                    },
+                    "extruder_responsiveness_rshift" : 7,
+                    "extruder_relax_shift_offset" : 1,
+                    "extruder_relax_decay_time" : 300, 
+                    "motor_damping_rshift" : 4, 
+                    "velocity_error_lshift" : 2
+                },
+                "toolheads" : {"bronx": {
+                    "heater" : {
+                        "at_temp_timeout_min" : 3,
+                        "rise_timeout_min" : 1,
+                        "rise_temperature_threshold" : 10,
+                        "sag_temperature_threshold" : 20,
+                        "overrun_temperature_threshold" : 20,
+                        "preheat_temperature" : 180,
+                        "fan_preload" : 15,
+                        "print_temperature_default" : 215,
+                        "wait_for_target_timeout" : 5,
+                        "preload_tick_delay" : 8900
+                    }
+                }}
+            }
+        },
+        "home" : {
+            "retract_distance_mm" : 40.0,
+            "restart_distance_mm" : 40.0
+        },
+        "steps_per_mm" : {
+            "a" : 108.55
+        },
+        "max_speed_mm_per_second" : {
+            "a": 8.0
+        },
+        "filament" : {
+            "load_speed" : 6,
+            "load_distance" : 100,
+            "unload_speed_one" : 95,
+            "unload_speed_two" : 10,
+            "unload_distance_one" : 40,
+            "unload_distance_two" : 50,
+            "unload_delay": 10,
+            "auto_unload_distance": 80
+        }
+    },
+    "mk13_impla" : {
+        "nozzle_diameter" : 0.4,
+        "material_default" : "im-pla",
+        "materials" : {
+            "im-pla" : {
+                "linear_density": 0.0031,
+                "ooze_feedstock_distance" : 0.1,
+                "retract_distance" : 0.5,
+                "retract_rate" : 50,
+                "restart_rate" : 30,
+                "feed_diameter" : 1.77,
+                "temperature" : 215,
+                "max_flow_rate" : 5.0,
+                "acceleration" : {
+                    "slip_compensation_table" : [
+                        [0,0],
+                        [0.4877, 0.5243],
+                        [0.9754, 1.0485],
+                        [1.4631, 1.5637],
+                        [1.9508, 2.0788],
+                        [2.4385, 2.6023],
+                        [2.9261, 2.9993],
+                        [3.4138, 3.4992],
+                        [3.9015, 3.9015],
+                        [4.3892, 4.4990],
+                        [4.8769, 4.7550],
+                        [5.3646, 5.2305],
+                        [5.8523, 6.1449],
+                        [6.5838, 7.0776],
+                        [7.8183, 8.4047],
+                        [100, 100]
+                    ],
+                    "impulse_speed_limit_mm_per_s" : {
+                        "a" : 3.0
+                    },
+                    "min_speed_change_mm_per_s" : {
+                        "a" : 0.01
+                    },
+                    "max_speed_change_mm_per_s" : {
+                        "a" : 0.5
+                    },
+                    "rate_mm_per_s_sq" : {
+                        "a" : 10.0
+                    },
+                    "extruder_responsiveness_rshift" : 8,
+                    "extruder_relax_shift_offset" : 0,
+                    "extruder_relax_decay_time" : 300,
+                    "motor_damping_rshift" : 4,
+                    "velocity_error_lshift" : 2
+                },
+                "toolheads" : {"bronx": {
+                    "heater" : {
+                        "at_temp_timeout_min" : 3,
+                        "rise_timeout_min" : 1,
+                        "rise_temperature_threshold" : 10,
+                        "sag_temperature_threshold" : 20,
+                        "overrun_temperature_threshold" : 20,
+                        "preheat_temperature" : 180,
+                        "fan_preload" : 15,
+                        "print_temperature_default" : 215,
+                        "wait_for_target_timeout" : 5,
+                        "preload_tick_delay" : 8900
+                    }
+                }}
+            }
+        },
+        "home" : {
+            "retract_distance_mm" : 40.0,
+            "restart_distance_mm" : 40.0
+        },
+        "steps_per_mm" : {
+            "a" : 108.55
+        },
+        "max_speed_mm_per_second" : {
+            "a": 8.0
+        },
+        "filament" : {
+            "load_speed" : 6,
+            "load_distance" : 100,
+            "unload_speed_one" : 95,
+            "unload_speed_two" : 10,
+            "unload_distance_one" : 40,
+            "unload_distance_two" : 50,
+            "unload_delay": 10,
+            "auto_unload_distance": 80
+        }
+    }
+}
+}

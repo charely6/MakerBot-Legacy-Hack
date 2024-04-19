@@ -1,0 +1,104 @@
+{
+    "printerpanel": {
+        "log_level": "info",
+        "type_pretty_name": "Replicator Mini +",
+        "requires_z_calibration": false,
+        "default_language": "en",
+        "force_firmware_update": false,
+        "camera_images_max": 250,
+        "supported_languages": {
+            "pr": {
+                "no": "N\u00e3o",
+                "region": "Europe",
+                "font-file": "Antenna",
+                "label": "Portugu\u00eas",
+                "yes": "Sim",
+                "font-family": "Antenna",
+                "message": "Mudar o idioma para portugu\u00eas?"
+            },
+            "fr": {
+                "no": "Non, annuler les changements",
+                "region": "Europe",
+                "font-file": "Antenna",
+                "label": "Fran\u00e7ais",
+                "yes": "Oui",
+                "font-family": "Antenna",
+                "message": "Changer la langue fran\u00e7aise?"
+            },
+            "es_la": {
+                "no": "No",
+                "region": "Europe",
+                "font-file": "Antenna",
+                "label": "Espa\u00f1ol: Am\u00e9rica Latina",
+                "yes": "S\u00ed",
+                "font-family": "Antenna",
+                "message": "Cambiar lenguage a espa\u00f1ol?"
+            },
+            "zh": {
+                "no": "\u4e0d\uff0c\u53d6\u6d88\u66f4\u6539",
+                "region": "Asia",
+                "font-file": "NotoSansCJKsc",
+                "label": "\u7b80\u4f53\u4e2d\u6587",
+                "yes": "\u662f\u7684",
+                "font-family": "Noto Sans CJK SC",
+                "message": "\u8bed\u8a00\u66f4\u6539\u4e3a\u7b80\u4f53\u4e2d\u6587\u5417\uff1f"
+            },
+            "de": {
+                "no": "Nein, abbrechen \u00e4ndern",
+                "region": "Europe",
+                "font-file": "Antenna",
+                "label": "Deutsch",
+                "yes": "Ja",
+                "font-family": "Antenna",
+                "message": "\u00c4ndern Sie die Sprache auf Deutsch?"
+            },
+            "ko": {
+                "no": "\uc544\ub2c8, \ubcc0\uacbd \ucde8\uc18c",
+                "region": "Asia",
+                "font-file": "NotoSansCJKkr",
+                "label": "\ud55c\uad6d\uc5b4",
+                "yes": "\uc608",
+                "font-family": "Noto Sans CJK KR",
+                "message": "\ud55c\uad6d\uc5b4 \uc5b8\uc5b4\ub97c \ubcc0\uacbd \ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?"
+            },
+            "it": {
+                "no": "No, Cancelar Cambio",
+                "region": "Europe",
+                "font-file": "Antenna",
+                "label": "Italiano",
+                "yes": "S\u00ec",
+                "font-family": "Antenna",
+                "message": "Cambiare la lingua italiana?"
+            },
+            "en": {
+                "no": "No, Cancel Change",
+                "region": "America",
+                "font-file": "Antenna",
+                "label": "English",
+                "yes": "Yes",
+                "font-family": "Antenna",
+                "message": "Change the language to English?"
+            },
+            "ja": {
+                "no": "\u3044\u3044\u3048\u3001\u5909\u66f4\u3092\u30ad\u30e3\u30f3\u30bb\u30eb",
+                "region": "Asia",
+                "font-file": "NotoSansCJKjp",
+                "label": "\u65e5\u672c\u8a9e",
+                "yes": "\u306f\u3044",
+                "font-family": "Noto Sans CJK JP",
+                "message": "\u8a00\u8a9e\u3092\u65e5\u672c\u8a9e\u306b\u5909\u66f4\u3057\u307e\u3059\u304b\uff1f"
+            },
+            "es": {
+                "no": "No",
+                "region": "Europe",
+                "font-file": "Antenna",
+                "label": "Espa\u00f1ol",
+                "yes": "S\u00ed",
+                "font-family": "Antenna",
+                "message": "Cambiar el idioma a espa\u00f1ol?"
+            }
+        },
+        "printer_id": 8,
+        "onboard_storage_max": 1024
+    }
+}

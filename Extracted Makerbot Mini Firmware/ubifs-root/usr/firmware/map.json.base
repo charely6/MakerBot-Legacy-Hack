@@ -1,0 +1,26 @@
+{ "supported_tools": [],
+  "map":
+  [
+      {"name":"version",
+        "size":1,
+        "type":"uint8_t",
+        "hex":"0x00"
+      },
+      {"name":"uid",
+        "size":4,
+        "type":"uint32_t",
+        "hex":"0x00000000"
+      },
+      {"name":"id",
+        "size":1,
+        "type":"uint8_t",
+        "hex":"0x0"
+      },
+      {"name":"checksum",
+        "size":1,
+        "type":"uint8_t",
+        "hex":"0x00"
+      }
+  ]
+}
+

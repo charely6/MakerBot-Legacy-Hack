@@ -1,0 +1,22 @@
+#!/bin/sh
+
+test x$1 = xstart || exit 0
+
+modprobe cfg80211
+modprobe mac80211
+modprobe firmware_class
+modprobe wlcore
+modprobe wl12xx
+modprobe wlcore_sdio
+
+# If we have an ethernet mac address, set the wifi mac address
+# by complimenting the top hex digit in our /24 range
+if [[ ! -z $eth ]]
+then let compdigit=15-${eth:9:1}
+     wifimac=${eth:0:9}$(printf %x $compdigit)${eth:10}
+     ip link set dev wlan0 address $wifimac
+fi
+
+# TODO: stop wpa_supplicant on reboot                            
+wpa_supplicant -D nl80211 -i wlan0 -c /etc/wpa_supplicant.conf -B -u
+

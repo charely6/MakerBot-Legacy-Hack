@@ -1,0 +1,88 @@
+{
+    "version": "1.1.0",
+    "bot_type": null,
+    "makerbot_generation" : 5,
+    "max_speed_mm_per_second": {
+        "x": null,
+        "y": null,
+        "z": null
+    },
+    "build_volume": {
+        "x": null,
+        "y": null,
+        "z": null
+    },
+    "start_position": {
+        "x": null,
+        "y": null,
+        "z": null
+    },
+    "steps_per_mm": {
+        "x": null,
+        "y": null,
+        "z": null
+    },
+    "gantry_configuration": {
+        "max_outer_shell_speed": null,
+        "max_inner_shell_speed": null,
+        "travel_speed_xy": null,
+        "travel_speed_z" : null,
+        "max_fill_speed": null
+    },
+    "acceleration": {
+        "buffer_size": null,
+        "split_move_distance_mm": null,
+        "split_move_recursion_count": null,
+        "rate_mm_per_s_sq": {
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        "min_speed_change_mm_per_s": {
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        "max_speed_change_mm_per_s": {
+            "x": null,
+            "y": null,
+            "z": null
+        },
+        "impulse_speed_limit_mm_per_s": {
+            "x": null,
+            "y": null,
+            "z": null
+        }
+    },
+    "extra_slicer_settings": {
+        "plate_variability": null
+    },
+    "extruder_profiles": {
+        "*" : {
+            "nozzle_diameter": null,
+            "max_speed_mm_per_second": null,
+            "steps_per_mm": null,
+            "materials": {
+                "*": {
+                    "feed_diameter": null,
+                    "temperature": null,
+                    "ooze_feedstock_distance": null,
+                    "retract_distance": null,
+                    "retract_rate": null,
+                    "restart_rate": null,
+                    "max_flow_rate": null,
+                    "acceleration": {
+                        "rate_mm_per_s_sq": null,
+                        "min_speed_change_mm_per_s": null,
+                        "max_speed_change_mm_per_s": null,
+                        "impulse_speed_limit_mm_per_s": null,
+                        "slip_compensation_table": null
+                    }
+                }
+            }
+        },
+        "supported_extruders" : "--generated--",
+        "attached_extruders" : "--generated--"
+    },
+    "chamber_temperature_default" : "--generated--"
+}

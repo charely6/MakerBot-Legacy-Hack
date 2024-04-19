@@ -1,0 +1,48 @@
+#!/bin/sh
+
+test x$1 = xstart || exit 0
+
+# modprobe seems to have some problems with dependencies
+modprobe udc_core
+modprobe musb_hdrc
+modprobe da8xx
+modprobe libcomposite
+
+test x$USB_PID = x && USB_PID=0xFFFF
+test x$USB_ISERIAL = x && USB_ISERIAL=FIXYOURUBOOTENV
+
+# Lookup names by pid
+case $USB_PID in
+  0x0004)
+    PNPMODEL="Replicator Mini"
+    PROD="MakerBot Replicator Mini"
+    ;;
+  0x0005)
+    PNPMODEL="Replicator 5th Generation"
+    PROD="MakerBot Replicator"
+    ;;
+  0x0006)
+    PNPMODEL="Replicator Z18"
+    PROD="MakerBot Replicator Z18"
+    ;;
+  *)
+    PNPMODEL="Unknown"
+    PROD="MakerBot Replicator"
+    ;;
+esac
+
+# Possibly override the default product name
+test -e /var/product_name && PROD=$(cat /var/product_name) 
+
+# For newer models, we just take the product name and strip any
+# leading "MakerBot " to produce the PNP Model
+test $PNPMODEL = Unknown && PNPMODEL=${PROD##MakerBot }
+
+# iPNPstring needs two dummy characters at the beginning
+PNP="XXMFG:Makerbot;MDL:$PNPMODEL;CMD:MBI;CLS:Printer;"
+
+# g_3dprinter requires overrides for product and serial numbers
+modprobe g_3dprinter idProduct=$USB_PID iSerialNumber=$USB_ISERIAL iProduct="$PROD" iPNPstring="$PNP"
+
+# Actually for sshd, but it is easier to put this here
+mkdir -p /var/empty

@@ -1,0 +1,27 @@
+#!/bin/sh
+
+CMD=/usr/local/apache2/cgi-bin/fcgi_server.py
+PID=/tmp/fcgi.pid
+
+case "$1" in 
+    start)
+        echo "Starting the FCGI server"
+        # TODO: Fix buildroot to link python properly on 14.04
+        export LD_PRELOAD=librt.so.1
+        start-stop-daemon -S -m -b -p $PID -N 1 -x $CMD
+        ;;
+    stop)
+        echo "Stopping the FCGI server"
+        start-stop-daemon -K -p $PID -x $CMD
+        ;;
+    restart)
+        $0 stop
+        sleep 1
+        $0 start
+        ;;
+    *)  
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit 0

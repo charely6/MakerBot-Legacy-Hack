@@ -1,0 +1,8 @@
+#!/bin/sh
+
+test x$1 = xstart || exit 0
+
+sleep 120 &
+echo $! >/tmp/wait.pid
+wait $!
+rm -f /tmp/wait

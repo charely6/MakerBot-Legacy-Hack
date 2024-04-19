@@ -1,0 +1,28 @@
+#!/bin/sh
+
+CMD=/usr/apps/kaiten
+PID=/tmp/kaiten.pid
+
+case "$1" in 
+    start)
+        echo "Starting Kaiten"
+        ulimit -c unlimited
+        # to make __hash__ consistent between runs
+        export PYTHONHASHSEED=0
+        start-stop-daemon -S -m -b -p $PID -x $CMD
+        ;;
+    stop)
+        echo "Stopping Kaiten"
+        start-stop-daemon -K -p $PID -x $CMD
+        ;;
+    restart)
+        $0 stop
+        sleep 1
+        $0 start
+        ;;
+    *)  
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit 0

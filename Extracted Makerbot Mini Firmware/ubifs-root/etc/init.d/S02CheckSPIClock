@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Bail ASAP if we have already fixed the clock rate
+test ${UB_SPI_CLOCK} -le 15000000 && exit 0
+
+test x$1 = xstart || exit 0
+
+/usr/scripts/set_boot_nand.py

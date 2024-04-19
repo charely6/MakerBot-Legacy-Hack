@@ -1,0 +1,53 @@
+kernel/fs/nls/nls_ascii.ko:
+kernel/fs/nls/nls_utf8.ko:
+kernel/fs/minix/minix.ko:
+kernel/fs/exportfs/exportfs.ko:
+kernel/fs/nfsd/nfsd.ko: kernel/fs/exportfs/exportfs.ko
+kernel/fs/autofs4/autofs4.ko:
+kernel/fs/xfs/xfs.ko: kernel/lib/libcrc32c.ko kernel/crypto/crypto_hash.ko kernel/fs/exportfs/exportfs.ko
+kernel/crypto/crypto_hash.ko:
+kernel/crypto/crc32c.ko: kernel/crypto/crypto_hash.ko
+kernel/drivers/char/hw_random/rng-core.ko:
+kernel/drivers/base/firmware_class.ko:
+kernel/drivers/mtd/tests/mtd_oobtest.ko:
+kernel/drivers/mtd/tests/mtd_pagetest.ko:
+kernel/drivers/mtd/tests/mtd_readtest.ko:
+kernel/drivers/mtd/tests/mtd_speedtest.ko:
+kernel/drivers/mtd/tests/mtd_stresstest.ko:
+kernel/drivers/mtd/tests/mtd_subpagetest.ko:
+kernel/drivers/mtd/tests/mtd_torturetest.ko:
+kernel/drivers/mtd/tests/mtd_nandecctest.ko:
+kernel/drivers/mtd/tests/mtd_nandbiterrs.ko:
+kernel/drivers/net/wireless/ti/wlcore/wlcore.ko: kernel/drivers/base/firmware_class.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko
+kernel/drivers/net/wireless/ti/wlcore/wlcore_sdio.ko:
+kernel/drivers/net/wireless/ti/wl12xx/wl12xx.ko: kernel/drivers/net/wireless/ti/wlcore/wlcore.ko kernel/drivers/base/firmware_class.ko kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko
+kernel/drivers/net/tun.ko:
+kernel/drivers/usb/musb/musb_hdrc.ko: kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/usb/musb/da8xx.ko: kernel/drivers/usb/musb/musb_hdrc.ko kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/usb/gadget/udc-core.ko:
+kernel/drivers/usb/gadget/libcomposite.ko: kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/usb/gadget/g_printer.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/usb/gadget/g_3dprinter.ko: kernel/drivers/usb/gadget/libcomposite.ko kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/input/keyboard/atkbd.ko:
+kernel/drivers/input/keyboard/xtkbd.ko:
+kernel/drivers/media/usb/gspca/gspca_main.ko:
+kernel/drivers/cpufreq/cpufreq_performance.ko:
+kernel/drivers/cpufreq/cpufreq_powersave.ko:
+kernel/drivers/cpufreq/cpufreq_ondemand.ko:
+kernel/net/802/p8022.ko: kernel/net/llc/llc.ko
+kernel/net/802/psnap.ko: kernel/net/llc/llc.ko
+kernel/net/802/stp.ko: kernel/net/llc/llc.ko
+kernel/net/ipv4/tunnel4.ko:
+kernel/net/ipv6/ipv6.ko:
+kernel/net/ipv6/xfrm6_mode_transport.ko:
+kernel/net/ipv6/xfrm6_mode_tunnel.ko: kernel/net/ipv6/ipv6.ko
+kernel/net/ipv6/xfrm6_mode_beet.ko: kernel/net/ipv6/ipv6.ko
+kernel/net/ipv6/sit.ko: kernel/net/ipv4/tunnel4.ko kernel/net/ipv6/ipv6.ko
+kernel/net/wireless/cfg80211.ko:
+kernel/net/llc/llc.ko:
+kernel/net/bridge/bridge.ko: kernel/net/802/stp.ko kernel/net/ipv6/ipv6.ko kernel/net/llc/llc.ko
+kernel/net/mac80211/mac80211.ko: kernel/net/wireless/cfg80211.ko
+kernel/lib/crc-ccitt.ko:
+kernel/lib/crc-t10dif.ko:
+kernel/lib/crc7.ko:
+kernel/lib/libcrc32c.ko: kernel/crypto/crypto_hash.ko

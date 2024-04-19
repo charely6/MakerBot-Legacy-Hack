@@ -1,0 +1,17 @@
+{
+    "motor_current_max": [
+        475,
+        475,
+        450
+    ],
+    "motor_current_min": [
+        200,
+        200,
+        200
+    ],
+    "heater_current_max": 3200,
+    "heater_current_min": 2000,
+    "12v_standby_current_limit": 20,
+    "5v_standby_current_limit": 970,
+    "z_endstop": true
+}

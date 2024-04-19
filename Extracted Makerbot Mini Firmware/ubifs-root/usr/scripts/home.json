@@ -1,0 +1,16 @@
+{
+    "environment": {},
+    "sequence": [
+        ["move", [0,0,2,0], 12,  
+         [true, true, true, true]
+        ],
+        ["home", ["y"]],
+        ["move", [0,0,0,0], 100,
+         [true, false, true, true]
+        ],
+        ["home", ["x"]],
+        ["move", ["$X_SAFE_ZHOME","$Y_SAFE_ZHOME",0,0], 100,
+         [false, false, true, true]
+        ]
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "kaiten" : {
+        "firmware_update" : {
+            "firmware_server_url" : "firmware.makerbot.com",
+            "firmware_download_path" : "/bwfw/",
+            "firmware_versions_list" : "/bwfw/list.json"
+        },
+        "font_update" :{
+            "font_server_url" : "firmware.makerbot.com",
+            "font_download_path" : "/bwfont/",
+            "font_files_list" : "/bwfont/list.json"
+        }
+    }
+}
